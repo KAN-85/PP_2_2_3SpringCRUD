@@ -17,8 +17,8 @@
         <td th:utext="${user.getFirstName()}">First name</td>
         <td th:utext="${user.getLastName()}">Last name</td>
         <td th:utext="${user.getEmail()}">E-mail</td>
-        <td><a class="btn" th:href="@{/delete/{id}(id = ${user.getId()})}">Delete</a>
-            <a class="btn" th:href="@{/update/{id}(id = ${user.getId()})}">Edit</a>
+        <td><a class="btn" th:href="@{/delete/(id = ${user.getId()})}">Delete</a>
+            <a class="btn" th:href="@{/update/(id = ${user.getId()})}">Edit</a>
     </tr>
 </table>
 <br>
